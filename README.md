@@ -14,6 +14,9 @@
 - npm i --save-dev sass-loader
 - npm i --save-dev style-loader
 - npm i --save-dev webpack webpack-cli webpack-dev-server
+- npm i --save-dev autoprefixer
+- npm i --save-dev imagemin-webpack-plugin
+- npm i --save-dev url-loader webpack-merge
 
 - Para desinstalar um pacote basta rodar o código: `npm uninstall <nome-pacote>`
 

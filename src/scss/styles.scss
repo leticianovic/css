@@ -1,0 +1,106 @@
+$colorBorder: #33D;
+$colorFont: #fff;
+$colorBackBox: #FD3;
+$colorBackDefault: #33f;
+$fontDefault: Arial, Helvetica, sans-serif;
+
+
+body {
+    background: url('../assets/background.jpg') no-repeat top center;
+    background-size: cover;
+    font-family: $fontDefault;
+    margin: 0;
+}
+
+h1 {
+    color: $colorFont;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 4rem;
+    color: $colorFont;
+    margin-left: 10px;
+}
+
+h3 {
+    margin-top: 4rem;
+    color: $colorFont;
+    margin-left: 10px;
+}
+
+%boxContainer {
+    background: $colorBackBox;
+    border-radius: 1rem;
+    display: flex;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.box__containerC {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+.box__containerFS {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+.box__containerFE {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+.box__containerSB {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+.box__containerSA {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+.box__containerSE {
+    @extend %boxContainer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0 10px;
+}
+
+
+
+.box {
+    border-radius: 1rem;
+    border: 2px solid $colorBorder;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+}
