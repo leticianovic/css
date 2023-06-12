@@ -4,6 +4,9 @@ $colorBackBox: #FD3;
 $colorBackDefault: #33f;
 $fontDefault: Arial, Helvetica, sans-serif;
 
+html {
+    font-size: 62.5%;
+}
 
 body {
     background: url('../assets/background.jpg') no-repeat top center;
@@ -16,6 +19,7 @@ h1 {
     color: $colorFont;
     text-align: center;
     width: 100%;
+    margin-left: 10px;
 }
 
 h2 {
@@ -30,76 +34,84 @@ h3 {
     margin-left: 10px;
 }
 
-%boxContainer {
+.box__container {
     background: $colorBackBox;
     border-radius: 1rem;
     display: flex;
+    margin: 2rem auto 4rem;
+    padding: 1rem;
 
     img {
         width: 100%;
         height: auto;
     }
+    
+    &--around {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--between {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--evenly {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--center {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--flexStart {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--flexEnd {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
 }
 
-.box__containerC {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
-    margin: 0 10px;
+.grid {
+    margin-top: 7rem;
 }
-
-.box__containerFS {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 1rem;
-    margin: 0 10px;
-}
-
-.box__containerFE {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 1rem;
-    margin: 0 10px;
-}
-
-.box__containerSB {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
-    margin: 0 10px;
-}
-
-.box__containerSA {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
-    margin: 0 10px;
-}
-
-.box__containerSE {
-    @extend %boxContainer;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
-    margin: 0 10px;
-}
-
-
 
 .box {
     border-radius: 1rem;
     border: 2px solid $colorBorder;
+    text-align: center;
+    margin: 1rem auto;
     width: 10rem;
     height: 10rem;
     text-align: center;
