@@ -38,8 +38,8 @@ h3 {
     background: $colorBackBox;
     border-radius: 1rem;
     display: flex;
-    margin: 2rem auto 4rem;
-    padding: 1rem;
+    margin: 15px 200px;
+    padding: 10rem;
 
     img {
         width: 100%;
@@ -50,48 +50,38 @@ h3 {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        padding: 1rem;
-        margin: 0 10px;
+        align-items: stretch;
     }
 
     &--between {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 1rem;
-        margin: 0 10px;
+        align-items: flex-end;
     }
 
     &--evenly {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        padding: 1rem;
-        margin: 0 10px;
     }
 
     &--center {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        padding: 1rem;
-        margin: 0 10px;
     }
 
     &--flexStart {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        padding: 1rem;
-        margin: 0 10px;
     }
 
     &--flexEnd {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-end;
-        padding: 1rem;
-        margin: 0 10px;
     }
 
     &--grid {
@@ -99,6 +89,7 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
         gap: 2rem;
+        height: fit-content;
     }
     
 }
@@ -110,9 +101,36 @@ h3 {
 .box {
     border-radius: 1rem;
     border: 2px solid $colorBorder;
+    background-color: rgb(186, 186, 224);
     text-align: center;
     margin: 1rem auto;
-    width: 10rem;
-    height: 10rem;
-    text-align: center;
+    min-width: 10rem;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes slideIn {
+    from {
+        left: -999px;
+        opacity: .1;
+        background-color: red;
+        height: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+        background-color: rgb(186, 186, 224);
+        height: fit-content;
+    }
+    
 }
