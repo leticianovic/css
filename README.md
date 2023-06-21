@@ -24,3 +24,6 @@
 - Requer o node.js instalado
 - Baixar ou clonar este repositório
 - Acessar com o terminal a pasta do projeto, baixado e executar o comando: `npm install` 
+
+#### Rodar local
+- executar o comando `npm run dev`
