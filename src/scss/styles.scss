@@ -41,10 +41,10 @@ h3 {
     margin: 15px 200px;
     padding: 10rem;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+    // img {
+    //     width: 100%;
+    //     height: auto;
+    // }
     
     &--around {
         flex-direction: row;
@@ -92,6 +92,21 @@ h3 {
         height: fit-content;
     }
     
+    &--image {
+        .box {
+            overflow: hidden;
+            border: 3px solid $colorBackDefault;
+            margin-left: 10px;
+            width: auto;
+
+            img {
+                width: 20rem;
+                height: 15rem;
+                object-fit: cover;
+                object-position: 30% 100%;
+            }
+        }
+    }
 }
 
 .grid {
@@ -112,10 +127,10 @@ h3 {
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
-    animation-name: slideIn;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    // animation-name: slideIn;
+    // animation-duration: 3s;
+    // animation-iteration-count: 2;
+    // animation-direction: alternate;
 }
 
 @keyframes slideIn {
