@@ -8,81 +8,102 @@
 </head>
 <body>
     <div id="root">
-        <h1>FlexBox</h1>
+        
+        <header>
+            <div class="container">
+                <h2>Logo</h2>
+                <nav>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#produto">Produtos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+        </header>
 
-        <h2>Justify Content</h2>
+        <section id="sobre">
+            <div class="container">
+                <aside>
+                    <div class="" id="localizacao"></div>
+                </aside>
 
-        <h3>Center</h3>
-        <div class="box__container box__container--center">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>
+                <article>
+                    <h1>Sobre nós</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt corrupti! Provident similique temporibus accusantium iure saepe perspiciatis maxime exercitationem debitis. Veritatis iure corrupti possimus odit. Eos beatae eligendi quas!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptates aut laudantium consequatur numquam nemo non, at in, corporis quos est tempore incidunt saepe esse quam ut cum alias fuga.</p>
+                </article>
+            </div>
+        </section>
 
-        <h3>Flex Start</h3>
-        <div class="box__container box__container--flexStart">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>
+        <section id="produto">
+            <div class="container">
+                <h1>Catálogo</h1>
+                
+                <div class="vitrine">
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 1</h3>
+                        <img src="./assets/braco-robo.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
 
-        <h3>Flex End</h3>
-        <div class="box__container box__container--flexEnd">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 2</h3>
+                        <img src="./assets/robo.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
 
-        <h3>Space Between</h3>
-        <div class="box__container box__container--between">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 3</h3>
+                        <img src="./assets/gabinete.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
 
-        <h3>Space Around</h3>
-        <div class="box__container box__container--around">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 4</h3>
+                        <img src="./assets/vr.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
 
-        <h3>Space Evenly</h3>
-        <div class="box__container box__container--evenly">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-        </div>        
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 5</h3>
+                        <img src="./assets/phone-in-ear.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
 
-        <h1 class="grid">Grid</h1>
-        <div class="box__container box__container--grid">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-            <div class="box">Box 6</div>
-            <div class="box">Box 7</div>
-            <div class="box">Box 8</div>
-            <div class="box">Box 9</div>
-        </div>
+                    <div class="vitrine__item">
+                        <h3 class="vitrine__item--produto">Produto 6</h3>
+                        <img src="./assets/ipad.jpg" alt="" class="vitrine__item--image">
+                        <p class="vitrine__desc"></p>
+                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
 
-        <div class="box__container box__container--image">
-            <div class="box" id="building"></div>
-            <div class="box" id="notebook"></div>
-        </div>
+        <section id="contato">
+            <h1>Contato</h1>
+            <div class="container">
+                <form class="contato">
+                    <input type="text" placeholder="Nome" class="contato__input">
+                    <input type="text" placeholder="Email" class="contato__input">
+                    <input type="text" placeholder="Telefone" class="contato__input">
+                    <button class="contato__button">Enviar</button>
+                </form>
+            </div>
+            
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>LetriKsS &copy; Todos os direitos reservados. <br>
+                    <small>Desenvolvido por Letícia S. Santos</small></p>
+            </div>
+        </footer>
 
     </div>
 </body>

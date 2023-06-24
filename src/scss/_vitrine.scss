@@ -1,0 +1,39 @@
+@import 'vars';
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+
+    &__item {
+        
+        &--produto {
+            color: $colorDefaultB;
+        }
+
+        &--image {
+            border: 2px solid $color;
+            border-radius: 1rem;
+            justify-content: center;
+            width: 30rem;
+            height: 25rem;
+            object-fit: cover;
+            object-position: 50% 80%;
+        }
+
+        &--button {
+            background-color: $colorFont;
+            border-radius: 1rem;
+            border: 1px solid $color;
+            color: $color;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            font-size: $fontSize;
+            text-decoration: none;
+            display: grid;
+            justify-items: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
