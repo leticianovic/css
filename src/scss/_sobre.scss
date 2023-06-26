@@ -1,0 +1,19 @@
+@import 'vars';
+
+#sobre {
+    background-color: $colorBgSobre;
+    max-width: 95vw;
+    margin-left: 2rem;
+
+    .container {
+        h1 {
+            text-align: left;
+            margin-left: 2rem;
+        }
+
+        p {
+            margin-left: 2rem;
+            color: $colorDefaultW;
+        }
+    }
+}
