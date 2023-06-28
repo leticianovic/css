@@ -42,7 +42,13 @@ h1 {
     font-family: 'lobster', sans-serif;
     color: $colorTitle;
     text-shadow: 2px 4px 8px #2D114D;
-    font-size: large;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 95%;
 }
 
 h2 {
@@ -60,6 +66,27 @@ nav {
         margin-left: 5rem;
         text-decoration: none;
         color: $colorDefaultW;
+        font-size: $fontSize;
+    }
+}
+
+.banner__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    &--image {
+        width: 40rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &--desc {
+        text-align: center;
+        color: $colorDefaultW;
+        font-size: 1.2rem;
     }
 }
 
@@ -70,24 +97,11 @@ nav {
     max-width: 100%;
 }
 
-#sobre {
-    background-color: $colorDefaultW;
-    margin-top: 7rem;
-}
-
-#produto {
-    margin-top: 7rem;
-}
-
-#contato {
-    margin-top: 7rem;
-    display: grid;
-}
-
 footer {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 @import 'sobre';
 @import 'vitrine';
+@import 'steps';

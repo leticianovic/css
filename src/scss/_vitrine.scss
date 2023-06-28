@@ -1,6 +1,8 @@
 @import 'vars';
 
 #produto {
+    margin-top: 7rem;
+    
     .container {
         background-color: #e9e8ea;
     }
@@ -9,37 +11,59 @@
 .vitrine {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    justify-items: center;
+    gap: 5rem;
+    width: 95%;
+    margin: 5rem 3rem;
 
     &__item {
+        background-color: #e0dde3;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -webkit-box-shadow: 4px -2px 10px 1px #2D114D;
+        box-shadow: 4px -2px 10px 1px #2D114D;
+
         
         &--produto {
             color: $colorDefaultB;
         }
 
         &--image {
-            border: 2px solid $color;
-            border-radius: 1rem;
             justify-content: center;
-            width: 20rem;
-            height: 15rem;
-            object-fit: cover;
-            object-position: 50% 80%;
+
+            img {
+                width: 10rem;
+                height: 10rem;
+                margin-top: 3rem;
+            }
+        }
+
+        &--desc {
+            text-align: center;
+            font-family: 'tekoregular', sans-serif;
+            font-size: 1.5rem;
         }
 
         &--button {
             background-color: $colorFont;
             border-radius: 1rem;
-            border: 1px solid $color;
             color: $color;
             font-weight: bold;
             padding: 1rem 2rem;
-            font-size: $fontSize;
+            font-size: 1rem;
             text-decoration: none;
             display: grid;
             justify-items: center;
             margin-bottom: 2rem;
+            font-family: 'tekoregular', sans-serif;
+            -webkit-box-shadow: 1px 1px 8px 1px #2D114D;
+            box-shadow: 1px 1px 8px 1px #2D114D;
+
+            &:hover {
+                -webkit-box-shadow:inset 1px 1px 8px 1px #2D114D;
+                box-shadow:inset 1px 1px 8px 1px #2D114D;
+            }
         }
     }
 }

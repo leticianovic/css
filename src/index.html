@@ -18,13 +18,20 @@
             <div class="container">
                 <a class="logo" href="#"><img src="./assets/images/logo.png" alt=""></a>
 
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produto">Produtos</a>
-                    <a href="#contato">Contato</a>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produto">Produtos</a>
+                    <a class="nav__item" href="#como-funciona">Como funciona</a>
                 </nav>
             </div>
         </header>
+
+        <section class="banner">
+            <div class="banner__item">
+                <img class="banner__item--image" src="./assets/images/banner.png" alt="">
+                <p class="banner__item--desc">Veja como melhorar seu negócio</p>
+            </div>
+        </section>
 
         <section id="sobre">
             <div class="container">
@@ -34,8 +41,8 @@
 
                 <article>
                     <h1>Sobre nós</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt corrupti! Provident similique temporibus accusantium iure saepe perspiciatis maxime exercitationem debitis. Veritatis iure corrupti possimus odit. Eos beatae eligendi quas!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptates aut laudantium consequatur numquam nemo non, at in, corporis quos est tempore incidunt saepe esse quam ut cum alias fuga.</p>
+                    <p>Somos uma equipe especializada na soluções de tecnologia, trabalhamos com as principais ferramentas profissionais do mercado para você melhorar seu negócio rapidamente.</p>
+                    <p>Veja como funciona nosso processo e nossos produtos disponíveis para nos contratar. E veja a mágica que faremos em poucos dias de trabalho, para você lançar seu negócio em alto estilo.</p>
                 </article>
             </div>
         </section>
@@ -46,48 +53,77 @@
                 
                 <div class="vitrine">
                     <div class="vitrine__item">
-                        <h3 class="vitrine__item--produto">Banco de Dados</h3>
-                        <img src="./assets/images/braco-robo.jpg" alt="" class="vitrine__item--image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                        <div class="vitrine__item--image">
+                            <img src="./assets/images/gerenciamento-de-banco-de-dados.png" alt="Banco de Dados">
+                        </div>
+                        <h3 class="vitrine__item--title"></h3>
+                        
+                        <p class="vitrine__item--desc">Modelando o seu banco de dados</p>
+                        <a href="#produto-bd" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
                     <div class="vitrine__item">
-                        <h3 class="vitrine__item--produto">Web Site</h3>
-                        <img src="./assets/images/robo.jpg" alt="" class="vitrine__item--image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                        <div class="vitrine__item--image">
+                            <img src="./assets/images/internet.png" alt="Web Site">
+                        </div>
+                        <h3 class="vitrine__item--title"></h3>
+                        
+                        <p class="vitrine__item--desc">Melhoria do seu web site</p>
+                        <a href="#produto-ws" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
                     <div class="vitrine__item">
-                        <h3 class="vitrine__item--produto">Aplicativo Android/IOS</h3>
-                        <img src="./assets/images/gabinete.jpg" alt="" class="vitrine__item--image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                        <div class="vitrine__item--image">
+                            <img src="./assets/images/aplicativo-movel.png" alt="Aplicativo Mobile">
+                        </div>
+                        <h3 class="vitrine__item--title"></h3>
+                        
+                        <p class="vitrine__item--desc">Criando um app para seu negócio</p>
+                        <a href="#produto-app" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
                     <div class="vitrine__item">
-                        <h3 class="vitrine__item--produto">Chat IA</h3>
-                        <img src="./assets/images/vr.jpg" alt="" class="vitrine__item--image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__item--button">Ver detalhes</a>
+                        <div class="vitrine__item--image">
+                            <img src="./assets/images/configuracao.png" alt="Chat IA">
+                        </div>
+                        <h3 class="vitrine__item--title"></h3>
+                        
+                        <p class="vitrine__item--desc">Tenha um chat inteligente para seu negócio</p>
+                        <a href="#produto-ia" class="vitrine__item--button">Tenho interresse</a>
                     </div>
                         
                 </div>
             </div>
         </section>
 
-        <section id="contato">
-            <h1>Contato</h1>
+        <section id="como-funciona">
             <div class="container">
-                <form class="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="Email" class="contato__input">
-                    <input type="text" placeholder="Telefone" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article>
+                    <h1>Como funciona?</h1>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img class="steps__item--image" src="./assets/images/escolha.png" alt="Escolha seu lance">
+                            <h3>Escolha sua solução</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img class="steps__item--image" src="./assets/images/pagamento-seguro.png" alt="Pague o item escolhido">
+                            <h3>Finalize seu pagamento</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img class="steps__item--image" src="./assets/images/integracao.png" alt="Trabalhamos">
+                            <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img class="steps__item--image" src="./assets/images/aceitar.png" alt="Você aprova">
+                            <h3>Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img class="steps__item--image" src="./assets/images/aviao-de-papel.png" alt="Lance seu negócio">
+                            <h3>Se estiver tudo ok para você, você melhora seu negócio <span>=)</span></h3>
+                        </div>
+                    </div>
+                </article>
             </div>
-            
         </section>
 
         <footer>

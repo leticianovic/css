@@ -5,5 +5,22 @@
          url('../assets/fonts/Lobster-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'tekolight';
+    src: url('../assets/fonts/teko-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/teko-light-webfont.woff') format('woff'),
+         url('../assets/fonts/Teko-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tekoregular';
+    src: url('../assets/fonts/teko-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/teko-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/Teko-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
