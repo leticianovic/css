@@ -1,4 +1,7 @@
 @import 'vars';
+@import 'animations';
+
+
 
 #produto {
     margin-top: 7rem;
@@ -23,7 +26,11 @@
         align-items: center;
         -webkit-box-shadow: 4px -2px 10px 1px #2D114D;
         box-shadow: 4px -2px 10px 1px #2D114D;
+        position: relative;
 
+        &:hover {
+            animation: toTop 2s;
+        }
         
         &--produto {
             color: $colorDefaultB;
@@ -67,3 +74,4 @@
         }
     }
 }
+
