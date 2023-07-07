@@ -12,17 +12,79 @@
     <title>LetriKsS</title>
 </head> 
 <body>
+
+   <!--<div>
+        <div class="grid">
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            <div class="col-1">
+                <div class="bg-red"></div>
+            </div>
+            </div>
+        </div>
+    </div>-->
+
     <div id="root">
         
         <header>
             <div class="container">
-                <a class="logo" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
 
-                <nav class="nav">
-                    <a class="nav__item" href="#sobre">Sobre</a>
-                    <a class="nav__item" href="#produto">Produtos</a>
-                    <a class="nav__item" href="#como-funciona">Como funciona</a>
-                </nav>
+                <div class="menu">
+                    <nav class="menu col-4">
+                        <a class="menu__item" href="#sobre">Sobre</a>
+                        <a class="menu__item" href="#produto">Produtos</a>
+                        <a class="menu__item" href="#como-funciona">Como funciona</a>
+                    </nav>
+                </div>
+
+                <button onclick="animeButton()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>               
+
+                <div class="menuMobile" id="menuMobile">
+                    <nav>
+                        <a class="menuMobile__item" href="#sobre">Sobre</a>
+                        <a class="menuMobile__item" href="#produto">Produtos</a>
+                        <a class="menuMobile__item" href="#como-funciona">Como funciona</a>
+                    </nav>
+                </div>
+                
             </div>
         </header>
 
@@ -52,7 +114,7 @@
                 <h1>Soluções</h1>
                 
                 <div class="vitrine">
-                    <div class="vitrine__item">
+                    <div class="vitrine__item col-12">
                         <div class="vitrine__item--image">
                             <img src="./assets/images/gerenciamento-de-banco-de-dados.png" alt="Banco de Dados">
                         </div>
@@ -62,7 +124,7 @@
                         <a href="#produto-bd" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
-                    <div class="vitrine__item">
+                    <div class="vitrine__item col-12">
                         <div class="vitrine__item--image">
                             <img src="./assets/images/internet.png" alt="Web Site">
                         </div>
@@ -72,7 +134,7 @@
                         <a href="#produto-ws" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
-                    <div class="vitrine__item">
+                    <div class="vitrine__item col-12">
                         <div class="vitrine__item--image">
                             <img src="./assets/images/aplicativo-movel.png" alt="Aplicativo Mobile">
                         </div>
@@ -82,7 +144,7 @@
                         <a href="#produto-app" class="vitrine__item--button">Tenho interresse</a>
                     </div>
 
-                    <div class="vitrine__item">
+                    <div class="vitrine__item col-12">
                         <div class="vitrine__item--image">
                             <img src="./assets/images/configuracao.png" alt="Chat IA">
                         </div>
@@ -101,23 +163,23 @@
                 <article>
                     <h1>Como funciona?</h1>
                     <div class="steps">
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img class="steps__item--image" src="./assets/images/escolha.png" alt="Escolha seu lance">
                             <h3>Escolha sua solução</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img class="steps__item--image" src="./assets/images/pagamento-seguro.png" alt="Pague o item escolhido">
                             <h3>Finalize seu pagamento</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img class="steps__item--image" src="./assets/images/integracao.png" alt="Trabalhamos">
                             <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img class="steps__item--image" src="./assets/images/aceitar.png" alt="Você aprova">
                             <h3>Em poucos dias você receberá o trabalho pronto para avaliar.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item col-5">
                             <img class="steps__item--image" src="./assets/images/aviao-de-papel.png" alt="Lance seu negócio">
                             <h3>Se estiver tudo ok para você, seu negócio estará melhorado <span>=)</span></h3>
                         </div>
@@ -134,5 +196,7 @@
         </footer>
 
     </div>
+
+    <script src="./js/animations.js"></script>
 </body>
 </html>

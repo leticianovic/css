@@ -27,3 +27,7 @@
 
 #### Rodar local
 - executar o comando `npm run dev`
+
+## Informções
+- box-sizing = border-box: considera o padding e border como parte do cálculo total da largura e altura
+- box-sizing = content-box: não considera o padding e border como parte do cálculo total da largura e altura
