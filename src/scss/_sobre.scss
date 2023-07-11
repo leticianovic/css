@@ -7,6 +7,14 @@
 
 #sobre {
     background-color: $colorBgSobre;
+
+    .container {
+        @include containerItems;
+    }
+}
+
+/*#sobre {
+    background-color: $colorBgSobre;
     max-width: 95vw;
     margin-left: 2rem;
     margin-top: 7rem;
@@ -22,4 +30,9 @@
             color: $colorDefaultW;
         }
     }
-}
+
+    @media (max-width: 426px) {
+        background-color: #471b79;
+        margin: 10rem 1rem;
+    }
+}*/

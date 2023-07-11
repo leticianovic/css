@@ -1,19 +1,87 @@
 // telas reais: ipad, desktop, smartphone
-@media only screen and (max-width: 500px) and (min-width: 300px) {
+@media screen and (max-width: 321px) {
+    .menu {
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header, #produto, #como-funciona {
+        width: 72vw;
+    }
+
+    header {
+        .container {
+            width: 70vw;
+
+            .logo img {
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .menuMobile {
+        top: 54px;
+    }
+
+    #btn-menu {
+        width: 25px;
+        height: 25px;
+        border-radius: 6px;
+    }
+
+    .linha {
+        height: 2px;
+        width: 15px;
+        margin: 2px -3px;
+    }
+
+    #btn-menu.ativo .linha:nth-child(1) {
+        transform: translateY(5px) rotate(-45deg);
+    }
+
+    #btn-menu.ativo .linha:nth-child(3) {
+        transform: translateY(-3px) rotate(45deg);
+    }
+
+    #sobre {
+        margin: 40px 100px 12px 5px;
+        padding: 13px;
+        
+        p {
+            font-weight: 600;
+        }
+    }
+
+    footer {
+        display: contents;
+
+        p {
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
     body {
         font-size: 1.6rem;
     }
 
-    .container {
+    .container, .logo {
         width: 100%;
     }
 
-    .menu {
+    .menu, .banner {
         display: none;
-    }
-
-    .logo {
-        width: 100%;
     }
 
     .menuMobile.abrir {
@@ -22,11 +90,10 @@
     }
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 768px) {
     #btn-menu, .menuMobile {
         display: none;
     }
-
 }
 
 // tela para impressão de arquivo

@@ -6,6 +6,10 @@
 @import 'responsive';
 #como-funciona {
     background: #dbd2e6;
+
+    .container {
+        @include containerItems;
+    }
 }
 
 .steps {
@@ -21,11 +25,32 @@
         
         h3, span {
             color: $colorDefaultB;
+
+            @media (max-width: 426px) {
+                font-size: 1rem;
+            }
         }
 
         &--image {
             width: 10rem;
             height: auto;
+
+            @media (max-width: 426px) {
+                width: 5rem;
+                height: auto;
+            }
         }
+    }
+
+    @media (max-width: 767px) {
+        width: auto;
+        display: flex;
+    }
+
+    @media (max-width: 426px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

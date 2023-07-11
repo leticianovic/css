@@ -6,11 +6,21 @@
 @import 'responsive';
 
 header {
+    background-color: $colorBgHeader;
+    display: block;
+
     .container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        
+        .logo img {
+            max-width:100px;
+            max-height:auto;
+            width: auto;
+            height: auto;
+        }        
     }
 }
 
@@ -24,17 +34,13 @@ header {
         text-decoration: none;
         color: $colorDefaultW;
         font-size: $fontSize;
-
-        @media (max-width: 321px) {
-            font-size: 1rem;
-        }
     }
 }
 
 /* MOBILE */
 .menuMobile {
     background-color: #1f0b36a8;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     position: absolute;
     top: 100px;
     left: 0;
@@ -42,7 +48,6 @@ header {
     height: 0;
     visibility: hidden;
     transition: .5s;
-    
 
     nav a {
         color: $colorDefaultW;

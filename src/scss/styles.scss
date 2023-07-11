@@ -3,7 +3,6 @@
 @import 'grid';
 @import 'mixins';
 @import 'animations';
-@import 'responsive';
 
 * {
     box-sizing: border-box;
@@ -11,7 +10,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -20,23 +18,9 @@ body {
     margin: 0;
 }
 
-header, section, footer {
+section {
     display: block;
     float: left;
-}
-
-@import 'header';
-
-.logo img {
-    max-width:100px;
-    max-height:auto;
-    width: auto;
-    height: auto;
-
-    @media (max-width: 321px) {
-        width: 60px;
-        height: auto;
-    }
 }
 
 h1 {
@@ -60,38 +44,10 @@ h2 {
     margin-left: 10px;
 }
 
-.banner__item {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-
-    &--image {
-        width: 40rem;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    &--desc {
-        text-align: center;
-        color: $colorDefaultW;
-        font-size: 1.2rem;
-    }
-}
-
-#sobre, #como-funciona, footer {
-    .container {
-        @include containerItems;
-    }
-}
-
-footer {
-    display: flex;
-    margin-top: 3rem;
-}
-
-
+@import 'header';
+@import 'banner';
 @import 'sobre';
 @import 'vitrine';
 @import 'steps';
+@import 'footer';
+@import 'responsive';
