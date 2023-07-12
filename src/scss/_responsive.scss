@@ -1,24 +1,32 @@
 // telas reais: ipad, desktop, smartphone
-@media screen and (max-width: 321px) {
-    .menu {
-        a {
-            font-size: 1rem;
-        }
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .container, .logo {
+        width: 100%;
+    }
+
+    .menu, .banner {
+        display: none;
+    }
+
+    .menuMobile.abrir {
+        visibility: visible;
+        height: calc(100vh - 77px);
     }
 }
 
+// Mobile S
 @media screen and (max-width: 374px) {
-    body {
-        overflow-x: hidden;
-    }
-
     header, #produto, #como-funciona {
-        width: 72vw;
+        width: 100vw;
     }
 
     header {
         .container {
-            width: 70vw;
+            width: 98vw;
 
             .logo img {
                 width: 50px;
@@ -52,8 +60,8 @@
     }
 
     #sobre {
-        margin: 40px 100px 12px 5px;
-        padding: 13px;
+        margin: 85px 12px 24px 12px;
+        padding: 40px;
         
         p {
             font-weight: 600;
@@ -71,22 +79,33 @@
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 300px) {
-    body {
-        font-size: 1.6rem;
+// Mobile M/L
+@media only screen and (max-width: 426px) and (min-width: 375px) {
+    #produto, #como-funciona {
+        width: 100vw;
     }
 
-    .container, .logo {
-        width: 100%;
+    #btn-menu {
+        margin-right: 12px;
     }
 
-    .menu, .banner {
-        display: none;
+    #sobre {
+        margin: 120px 20px 24px 20px;
+        padding: 40px;
+        
+        p {
+            font-weight: 600;
+        }
     }
 
-    .menuMobile.abrir {
-        visibility: visible;
-        height: calc(100vh - 77px);
+    footer {
+        display: contents;
+
+        p {
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
