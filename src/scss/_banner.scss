@@ -5,6 +5,10 @@
 @import 'animations';
 @import 'responsive';
 
+.banner {
+    display: flex;
+    justify-content: center;
+
 .banner__item {
     display: flex;
     position: relative;
@@ -23,4 +27,5 @@
         color: $colorDefaultW;
         font-size: 1.2rem;
     }
+}
 }

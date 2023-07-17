@@ -7,19 +7,13 @@
 
 #sobre {
     background-color: $colorBgSobre;
-
-    .container {
-        @include containerItems;
-    }
-}
-
-/*#sobre {
-    background-color: $colorBgSobre;
     max-width: 95vw;
     margin-left: 2rem;
     margin-top: 7rem;
 
     .container {
+        @include containerItems;
+
         h1 {
             text-align: left;
             margin-left: 2rem;
@@ -28,9 +22,12 @@
         p {
             margin-left: 2rem;
             color: $colorDefaultW;
+            font-size: 1.5rem;
         }
     }
+}
 
+/*#sobre {
     @media (max-width: 426px) {
         background-color: #471b79;
         margin: 10rem 1rem;
